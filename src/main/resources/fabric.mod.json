@@ -1,0 +1,42 @@
+{
+	"schemaVersion": 1,
+	"id": "babel-divide",
+	"version": "${version}",
+	"name": "Babel-Divide",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"A11v1r15"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/babel-divide",
+		"sources": "https://github.com/A11v1r15/Babel-Divide",
+		"issues": "https://github.com/A11v1r15/Babel-Divide/issues"
+	},
+	"license": "MIT",
+	"icon": "assets/babel-divide/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.a11v1r15.babeldivide.BabelDivide"
+		],
+		"client": [
+			"net.a11v1r15.babeldivide.BabelDivideClient"
+		]
+	},
+	"mixins": [
+		"babel-divide.mixins.json",
+		{
+			"config": "babel-divide.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
